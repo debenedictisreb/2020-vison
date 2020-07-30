@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_020_vison" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-2I-BjH">
@@ -45,13 +45,12 @@
                                 <color key="textColor" red="0.87828356027603149" green="0.060884959995746613" blue="0.16232901811599731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-rX-cQr">
-                                <rect key="frame" x="144" y="695" width="126" height="73"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC0-2L-OBM">
+                                <rect key="frame" x="200" y="641" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="START"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="gpD-Gv-H5M" kind="show" id="sFn-R3-TLt"/>
+                                    <segue destination="gpD-Gv-H5M" kind="show" id="cbH-f7-lFw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,12 +196,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="websites here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-lq-ebG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-lq-ebG">
                                 <rect key="frame" x="63" y="132" width="288" height="549"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Links
+https://twitter.com/realDonaldTrump?s=12 //trumps twitter
+https://joebiden.com //official campaign website
+https://www.donaldjtrump.com // official campaign website
+https://www.theatlantic.com/politics/archive/2017/01/donald-trump-scandals/474726/ //scandals of Donald trump 
+https://www.townandcountrymag.com/society/politics/a26025326/2020-presidential-election-candidates-primaries-list/ //possible other candidates, candidates status
+</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -285,6 +291,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Abortion"/>
+                                <connections>
+                                    <action selector="aborttrump:" destination="IOw-On-DKI" eventType="touchUpInside" id="g8a-7G-hdb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRI-2M-KKe">
                                 <rect key="frame" x="51" y="189" width="145" height="50"/>
@@ -292,6 +301,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Gun Policy"/>
+                                <connections>
+                                    <action selector="guntrump:" destination="IOw-On-DKI" eventType="touchUpInside" id="uvL-Kf-fSP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63C-Ul-1VM">
                                 <rect key="frame" x="51" y="381" width="145" height="50"/>
@@ -299,6 +311,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Healthcare"/>
+                                <connections>
+                                    <action selector="heathcaretrump:" destination="IOw-On-DKI" eventType="touchUpInside" id="j9p-Z4-dYJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DA-0Y-yDr">
                                 <rect key="frame" x="225" y="283" width="145" height="50"/>
@@ -306,6 +321,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Climate Change"/>
+                                <connections>
+                                    <action selector="climatetrump:" destination="IOw-On-DKI" eventType="touchUpInside" id="a8N-6H-eyi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0D-et-fXU">
                                 <rect key="frame" x="225" y="189" width="145" height="50"/>
@@ -313,8 +331,11 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Immigration"/>
+                                <connections>
+                                    <action selector="immigrationtrump:" destination="IOw-On-DKI" eventType="touchUpInside" id="YsH-2b-D7c"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQq-hT-uzx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQq-hT-uzx">
                                 <rect key="frame" x="53" y="468" width="309" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
@@ -336,6 +357,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Economy"/>
+                                <connections>
+                                    <action selector="economytrump:" destination="IOw-On-DKI" eventType="touchUpInside" id="0GX-2I-Z7B"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which issue do you want to know Trump's views on?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xts-gU-4Vb">
                                 <rect key="frame" x="70" y="53" width="275" height="83"/>
@@ -344,11 +368,20 @@ To vote you have to
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSa-i3-kKw">
+                                <rect key="frame" x="51" y="772" width="79" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.064749121670000007" green="0.1170862839" blue="0.3504164219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h2D-SS-B2b"/>
                     </view>
                     <navigationItem key="navigationItem" id="axJ-fN-13M"/>
+                    <connections>
+                        <outlet property="trumplabel" destination="QQq-hT-uzx" id="gp6-fx-lVT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oL9-PM-emh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -368,6 +401,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Abortion"/>
+                                <connections>
+                                    <action selector="aborition:" destination="A7O-0C-jxm" eventType="touchUpInside" id="qi1-nP-uHb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4l-KK-njt">
                                 <rect key="frame" x="51" y="189" width="145" height="50"/>
@@ -375,6 +411,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Gun Policy"/>
+                                <connections>
+                                    <action selector="gun:" destination="A7O-0C-jxm" eventType="touchUpInside" id="pkI-3a-RrX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH2-0g-udd">
                                 <rect key="frame" x="51" y="381" width="145" height="50"/>
@@ -382,6 +421,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Healthcare"/>
+                                <connections>
+                                    <action selector="healthcare:" destination="A7O-0C-jxm" eventType="touchUpInside" id="DaH-T2-Xbv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAE-mJ-6VS">
                                 <rect key="frame" x="225" y="283" width="145" height="50"/>
@@ -389,6 +431,10 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Climate Change"/>
+                                <connections>
+                                    <action selector="aborition:" destination="A7O-0C-jxm" eventType="touchUpInside" id="HQZ-G3-MtO"/>
+                                    <action selector="climate:" destination="A7O-0C-jxm" eventType="touchUpInside" id="Mfn-Xi-XDj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSk-Gb-NA9">
                                 <rect key="frame" x="225" y="189" width="145" height="50"/>
@@ -396,8 +442,11 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Immigration"/>
+                                <connections>
+                                    <action selector="immigration:" destination="A7O-0C-jxm" eventType="touchUpInside" id="DP1-j2-8aX"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I23-JN-OZx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I23-JN-OZx">
                                 <rect key="frame" x="53" y="468" width="309" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
@@ -419,6 +468,9 @@ To vote you have to
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
                                 <state key="normal" title="Economy"/>
+                                <connections>
+                                    <action selector="economy:" destination="A7O-0C-jxm" eventType="touchUpInside" id="KHr-bB-MPJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which issue do you want to know Biden's views on?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7C-9G-vI8">
                                 <rect key="frame" x="70" y="55" width="275" height="83"/>
@@ -427,18 +479,28 @@ To vote you have to
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSa-yg-yTK">
+                                <rect key="frame" x="37" y="770" width="85" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="BACK"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.064749121670000007" green="0.1170862839" blue="0.3504164219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wMZ-Jz-naQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="A0X-oF-UZ4"/>
+                    <connections>
+                        <outlet property="bidenlabel" destination="I23-JN-OZx" id="XDA-OX-bB5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNJ-fe-Sqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3187" y="-193"/>
+            <point key="canvasLocation" x="3186.9565217391305" y="-193.52678571428569"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fI6-pk-tn5"/>
+        <segue reference="cuj-9k-irW"/>
     </inferredMetricsTieBreakers>
 </document>
