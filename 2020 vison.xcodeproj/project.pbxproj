@@ -16,6 +16,8 @@
 		46BBBEC424D1C96B006B2508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BBBEC224D1C96B006B2508 /* LaunchScreen.storyboard */; };
 		46BBBECF24D1C96B006B2508 /* _020_visonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBBECE24D1C96B006B2508 /* _020_visonTests.swift */; };
 		46BBBEDA24D1C96B006B2508 /* _020_visonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBBED924D1C96B006B2508 /* _020_visonUITests.swift */; };
+		9F78E7CB24D25A8A006C1E74 /* BidenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F78E7CA24D25A8A006C1E74 /* BidenViewController.swift */; };
+		9F78E7CD24D25AD1006C1E74 /* TrumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F78E7CC24D25AD1006C1E74 /* TrumpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		46BBBED524D1C96B006B2508 /* 2020 visonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "2020 visonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BBBED924D1C96B006B2508 /* _020_visonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _020_visonUITests.swift; sourceTree = "<group>"; };
 		46BBBEDB24D1C96B006B2508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F78E7CA24D25A8A006C1E74 /* BidenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidenViewController.swift; sourceTree = "<group>"; };
+		9F78E7CC24D25AD1006C1E74 /* TrumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				46BBBEC224D1C96B006B2508 /* LaunchScreen.storyboard */,
 				46BBBEC524D1C96B006B2508 /* Info.plist */,
 				46BBBEBD24D1C968006B2508 /* _020_vison.xcdatamodeld */,
+				9F78E7CA24D25A8A006C1E74 /* BidenViewController.swift */,
+				9F78E7CC24D25AD1006C1E74 /* TrumpViewController.swift */,
 			);
 			path = "2020 vison";
 			sourceTree = "<group>";
@@ -263,9 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46BBBEB924D1C968006B2508 /* ViewController.swift in Sources */,
+				9F78E7CB24D25A8A006C1E74 /* BidenViewController.swift in Sources */,
 				46BBBEB524D1C968006B2508 /* AppDelegate.swift in Sources */,
 				46BBBEBF24D1C968006B2508 /* _020_vison.xcdatamodeld in Sources */,
 				46BBBEB724D1C968006B2508 /* SceneDelegate.swift in Sources */,
+				9F78E7CD24D25AD1006C1E74 /* TrumpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
